@@ -14,9 +14,9 @@ a,
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
 }
-.orange {
+.purple {
   text-decoration: none;
-  color: #f15a24;
+  color: #3f00a1;
   transition: 0.4s;
 }
 
@@ -34,7 +34,7 @@ a,
 
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 0 2rem;
   }
 }
