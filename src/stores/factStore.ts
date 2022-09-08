@@ -8,10 +8,10 @@ export const useFactStore = defineStore({
     reactive({
       data: Array(),
       counter: 0,
-      loading: false,
     }),
   actions: {
     async getData(params?: string) {
+      this.counter = 0
       const res = await getFactByText(params || 'all')
       this.data = res.result
       this.counter = res.total
