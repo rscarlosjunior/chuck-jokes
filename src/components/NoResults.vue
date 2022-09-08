@@ -21,7 +21,7 @@ function chuckIsComming() {
 }
 </script>
 <template>
-  <div v-if="counter" class="error wrapper">
+  <div v-if="counter" class="noResults">
     <img
       alt="Unicorn Rejectable"
       class="icon"
@@ -29,11 +29,11 @@ function chuckIsComming() {
       width="200"
       height="200"
     />
-    <p>No results here, go away fast or chuck is gonna kill you</p>
+    <p class="noResults__message">No results here, go away fast or chuck is gonna kill you</p>
 
-    <p>{{counter}}</p>
+    <p>{{ counter }}</p>
   </div>
-  <div class="error wrapper" v-else>
+  <div class="noResults" v-else>
     <img
       alt="Chuck killing you"
       class="icon"
@@ -41,28 +41,25 @@ function chuckIsComming() {
       width="200"
       height="200"
     />
-    <p>Ok, you died.</p>
+    <p class="noResults__message">Ok, you died.</p>
   </div>
 </template>
 
-<style scoped>
-.wrapper {
+<style lang="scss" scoped>
+.noResults {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.error {
-  width: 200px;
   height: 200px;
   margin-top: 100px;
   width: 100%;
   justify-content: center;
   align-items: center;
-}
-p {
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-align: center;
+  &__message {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+  }
 }
 </style>

@@ -1,20 +1,18 @@
 <script setup lang="ts">
 defineProps<{
-  fact: string;
-  id: string;
-}>();
+  fact: string
+  id: string
+}>()
 </script>
 
 <template>
   <div class="item">
-    <div class="icon">
-      <img alt="Unicorn logo" class="icon" src="@/assets/unicorn.png" width="45" height="45" />
-    </div>
+    <img alt="Unicorn logo" class="item__icon" src="@/assets/unicorn.png" width="45" height="45" />
     <p>{{ fact }}</p>
   </div>
 </template>
 
-<style scoped>
+<style lang='scss' scoped>
 .item {
   display: flex;
   align-items: center;
@@ -27,8 +25,8 @@ defineProps<{
   width: 100%;
   max-width: 640px;
   margin: 10px auto;
-}
-.item .icon {
-  margin-right: 15px;
+  &__icon {
+    margin-right: 15px;
+  }
 }
 </style>
