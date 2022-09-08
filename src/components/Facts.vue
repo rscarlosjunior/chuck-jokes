@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref, computed } from "vue";
+import { computed } from "vue";
 import FactsItem from "@/components/FactsItem.vue";
 import { useFactStore } from "@/stores/factStore";
 import NoResults from "@/components/NoResults.vue";

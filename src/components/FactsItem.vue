@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import CommunityIcon from "./icons/IconCommunity.vue";
-
 defineProps<{
   fact: string;
   id: string;
