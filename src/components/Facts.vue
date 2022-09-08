@@ -1,29 +1,27 @@
 <script setup lang="ts">
-import { onMounted, ref, computed } from 'vue'
-import FactsItem from '@/components/FactsItem.vue'
-import CustomLoading from '@/components/CustomLoading.vue'
-import { useFactStore } from '@/stores/factStore'
+import { onMounted, ref, computed } from "vue";
+import FactsItem from "@/components/FactsItem.vue";
+import { useFactStore } from "@/stores/factStore";
+import NoResults from "@/components/NoResults.vue";
 
 const fact = useFactStore();
 
-onMounted(() => {
-  fact.getData()
-})
-
 const list = computed(() => {
-  return fact.data
-})
+  return fact.data;
+});
 </script>
 
 <template>
   <div v-if="list.length">
-    <div v-for="(item, index) of list" v-bind:key="item.id">
-      <FactsItem :fact="item.value" :id="item.id" :index="index" />
-    </div>
+    <FactsItem
+      v-for="(item, index) of list"
+      v-bind:key="item.id"
+      :fact="item.value"
+      :id="item.id"
+      :index="index"
+    />
   </div>
   <div v-else>
-    <CustomLoading/>
+    <NoResults/>
   </div>
 </template>
-
-<style></style>
