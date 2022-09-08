@@ -16,7 +16,7 @@ defineProps<{
   </div>
 </template>
 
-<style>
+<style scoped>
 .item {
   display: flex;
   align-items: center;
@@ -24,8 +24,11 @@ defineProps<{
   background: #f1f1f1;
   border-radius: 8px;
   padding: 20px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 100%;
+  max-width: 640px;
+  margin: 10px auto;
 }
 .item .icon {
   margin-right: 15px;
