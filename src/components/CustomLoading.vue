@@ -3,7 +3,6 @@
     <img alt="Unicorn logo" class="icon" src="@/assets/cry.png" width="200" height="200" />
     <p>Chuck Norris likes his meat so rare; he only eats unicorns.</p>
   </div>
-  <p>{{ fact }}</p>
 </template>
 
 <style scoped>
@@ -21,6 +20,10 @@
   -webkit-animation: fadeinout 3s linear forwards;
   animation: fadeinout 3s infinite forwards;
   opacity: 0;
+}
+
+p {
+  text-align: center;
 }
 
 @-webkit-keyframes fadeinout {
