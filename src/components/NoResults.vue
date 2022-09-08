@@ -25,7 +25,7 @@ function chuckIsComming() {
     <img
       alt="Unicorn Rejectable"
       class="icon"
-      src="@/assets/rejectable_unicorn.png"
+      src="@/assets/image/rejectable_unicorn.png"
       width="200"
       height="200"
     />
@@ -37,7 +37,7 @@ function chuckIsComming() {
     <img
       alt="Chuck killing you"
       class="icon"
-      src="@/assets/gif_chuck.gif"
+      src="@/assets/image/gif_chuck.gif"
       width="200"
       height="200"
     />

@@ -7,7 +7,7 @@ defineProps<{
 
 <template>
   <div class="item">
-    <img alt="Unicorn logo" class="item__icon" src="@/assets/unicorn.png" width="45" height="45" />
+    <img alt="Unicorn logo" class="item__icon" src="@/assets/image/unicorn.png" width="45" height="45" />
     <p>{{ fact }}</p>
   </div>
 </template>

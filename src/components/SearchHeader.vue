@@ -21,7 +21,7 @@ async function onSubmit() {
 </script>
 <template>
   <section class="header">
-    <img alt="ChuckNoris logo" src="@/assets/chucknoris_unicorn.png" width="300" height="250" />
+    <img alt="ChuckNoris logo" src="@/assets/image/chucknoris_unicorn.png" width="300" height="250" />
     <div class="header__search">
       <h1 class="header__search--title">Search Chuck Norris Facts</h1>
       <form class="header__search__form">

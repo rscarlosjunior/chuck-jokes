@@ -1,6 +1,6 @@
 <template>
   <div class="loading">
-    <img alt="Unicorn logo" src="@/assets/cry.png" width="200" height="200" />
+    <img alt="Unicorn logo" src="@/assets/image/cry.png" width="200" height="200" />
     <p class="loading__message">Chuck Norris likes his meat so rare; he only eats unicorns.</p>
   </div>
 </template>
