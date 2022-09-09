@@ -51,8 +51,8 @@ function chuckIsComming() {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 200px;
-  margin-top: 100px;
+  height: 20rem;
+  margin-top: 3rem;
   width: 100%;
   justify-content: center;
   align-items: center;

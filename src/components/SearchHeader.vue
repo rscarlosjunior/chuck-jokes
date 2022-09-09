@@ -15,9 +15,10 @@ const rules = {
 
 const v$ = useVuelidate(rules, form)
 
-async function onSubmit() {
-  fact.getData(form.search)
+ function onSubmit() {
+   fact.getData(form.search)
 }
+
 </script>
 <template>
   <section class="header">
@@ -50,7 +51,7 @@ async function onSubmit() {
 <style lang="scss" scoped>
 .header {
   width: 100%;
-  max-width: 640px;
+  max-width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,34 +70,34 @@ async function onSubmit() {
       transition: 0.4s;
       font-weight: 500;
       font-size: 1.5rem;
-      top: -10px;
+      top: -0.85rem;
     }
     &__form {
       display: flex;
       width: 100%;
       &__input {
-        padding: 10px;
-        font-size: 17px;
+        padding: 0.85rem;
+        font-size: 1.1rem;
         border: unset;
         width: 70%;
-        height: 45px;
+        height: 3rem;
         background: #f1f1f1;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
+        border-top-left-radius: 0.3rem;
+        border-bottom-left-radius: 0.3rem;
         &:focus {
           outline: none;
         }
       }
       &__button {
         width: 30%;
-        padding: 10px;
+        padding: 0.85rem;
         background: #9900e6;
         color: white;
-        font-size: 14px;
+        font-size: 1rem;
         border: unset;
         border-left: none;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
+        border-top-right-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
         cursor: pointer;
         &--disabled {
           background: #808080;

@@ -12,8 +12,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 200px;
-  margin-top: 50px;
+  height: 20rem;
+  margin-top: 3rem;
   -webkit-animation: fadeinout 3s linear forwards;
   animation: fadeinout 3s infinite forwards;
   opacity: 0;
