@@ -15,17 +15,21 @@ const rules = {
 
 const v$ = useVuelidate(rules, form)
 
- function onSubmit() {
-   fact.getData(form.search)
+function onSubmit() {
+  fact.getData(form.search)
 }
-
 </script>
 <template>
   <section class="header">
-    <img alt="ChuckNoris logo" src="@/assets/image/chucknoris_unicorn.png" width="300" height="250" />
+    <img
+      alt="ChuckNoris logo"
+      src="@/assets/image/chucknoris_unicorn.png"
+      width="300"
+      height="250"
+    />
     <div class="header__search">
       <h1 class="header__search--title">Search Chuck Norris Facts</h1>
-      <form class="header__search__form">
+      <form @submit.prevent.stop="onSubmit" class="header__search__form">
         <input
           type="text"
           class="header__search__form__input"
@@ -33,9 +37,8 @@ const v$ = useVuelidate(rules, form)
           placeholder="yes, FACTS. not JOKES."
         />
         <button
-          type="button"
+          type="submit"
           class="header__search__form__button"
-          @click="onSubmit"
           :disabled="v$.$invalid"
           :class="v$.$invalid ? 'header__search__form__button--disabled' : ''"
         >
@@ -61,7 +64,7 @@ const v$ = useVuelidate(rules, form)
     flex-direction: column;
     width: 100%;
     align-items: center;
-    &--error{
+    &--error {
       color: red;
     }
     &--title {

@@ -14,7 +14,7 @@ defineProps<{
       width="45"
       height="45"
     />
-    <p>{{ fact }}</p>
+    <p class="item__fact">{{ fact }}</p>
   </div>
 </template>
 
@@ -33,6 +33,9 @@ defineProps<{
   margin: 0.85rem auto;
   &__icon {
     margin-right: 1rem;
+  }
+  &__fact {
+    word-wrap: anywhere;
   }
 }
 </style>
