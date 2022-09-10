@@ -1,59 +1,114 @@
-# ./
+<a name="readme-top"></a>
 
-This template should help get you started developing with Vue 3 in Vite.
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Type Support for `.vue` Imports in TS
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/rscarlosjunior/chuck-jokes">
+    <img src="src/assets/image/chucknoris_unicorn.png" alt="Logo" width="300" height="250">
+  </a>
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+  <h3 align="center">Best search about Chuck Norris FACTS(not jokes) </h3>
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+  <p align="center">
+    An awesome project to search the best facts about Chuck Norris.
+    <br />
+    <a href="https://github.com/rscarlosjunior/chuck-jokes"><strong>Explore the repository »</strong></a>
+    <br />
+    <br />
+    <a href="https://chuck-jokes-mauve.vercel.app/">View Demo</a>
+    ·
+    <a href="https://www.linkedin.com/in/carlos-silva-13612464/">Report Bug</a>
+    ·
+    <a href="https://github.com/rscarlosjunior/chuck-jokes/issues">Request Feature</a>
+  </p>
+</div>
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
-## Customize configuration
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Awesome jokes facts about Chuck Norris with unicorns.
 
-## Project Setup
+Here's why:
+* I needed one new project
+* You probably like unicorns
+* I wanted to show to anyone the best experiencia with a joke API :smile:
 
-```sh
-npm install
-```
+Of course, it's not a finished project and it always can be more awesome doing upgrades.
 
-### Compile and Hot-Reload for Development
+### Built With
+* [![Vue][Vue.js]][Vue-url]
+* [![Typescript][Typescript]][Typescript-url]
 
-```sh
-npm run dev
-```
 
-### Type-Check, Compile and Minify for Production
+<!-- GETTING STARTED -->
+## Getting Started
 
-```sh
-npm run build
-```
+Please follow the doc to start
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Prerequisites
 
-```sh
-npm run test:unit
-```
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+### Installation
 
-```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
-```
+1. We gonna use the free api :  [https://api.chucknorris.io/](https://api.chucknorris.io/)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/rscarlosjunior/chuck-jokes.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Compile and Hot-Reload for Development
+   ```js
+   npm run dev
+   ```
+5. Type-Check, Compile and Minify for Production
+   ```js
+   npm run build
+   ```
+6. Run Unit Tests with [Vitest](https://vitest.dev/)
+   ```js
+   npm run test:unit
+   ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Lint with [ESLint](https://eslint.org/)
+## Usage
 
-```sh
-npm run lint
-```
+
+
+https://user-images.githubusercontent.com/75792848/189503218-8fd98ad4-4525-4b0e-a829-3f4603efa73c.mp4
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTACT -->
+## Contact
+
+Carlos Silva - [Linkedin](https://www.linkedin.com/in/carlos-silva-13612464/) - rs.carlosjunior@gmail.com
+
+Project website demo link: [ChuckNorris Facts](https://chuck-jokes-mauve.vercel.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/carlos-silva-13612464/
+[product-screenshot]: src/assets/images/chuck.png
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Typescript-url]: https://www.typescriptlang.org/
+[Typescript]: https://badges.frapsoft.com/typescript/code/typescript.png?v=101"
