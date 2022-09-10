@@ -6,7 +6,6 @@ import { createPinia } from 'pinia'
 import Facts from '@/components/Facts.vue'
 import FactsItem from '@/components/FactsItem.vue'
 import BackToTopButton from '@/components/FactsItem.vue'
-import NoResults from '@/components/FactsItem.vue'
 
 const pinia = createPinia()
 
