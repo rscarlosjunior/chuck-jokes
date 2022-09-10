@@ -18,3 +18,19 @@ export function memorizedCache(dataList: any, searchParams?: string) {
 
   return data
 }
+
+export function getRandomByCache(dataList: any) {
+  const dataFormatter = JSON.parse(dataList)
+
+  if(!dataFormatter) return dataList
+
+  const result = dataFormatter.result
+  const number = Math.floor(Math.random() * (result.length - 1 + 1)) + 1
+
+  const data = {
+    result: [result[number]],
+    total: 1,
+  }
+
+  return data
+}

@@ -19,7 +19,7 @@ export const useFactStore = defineStore({
 
     async getRandom() {
       const res = await getRandomFact()
-      this.data = [res.value]
+      this.data = res.result
       this.counter = 1
     },
   },
