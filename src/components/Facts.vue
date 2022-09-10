@@ -1,17 +1,19 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import FactsItem from "@/components/FactsItem.vue";
-import { useFactStore } from "@/stores/factStore";
-import NoResults from "@/components/NoResults.vue";
-import BackToTopButton from "@/components/BackToTopButton.vue";
+import { computed } from 'vue'
 
-const fact = useFactStore();
+import { useFactStore } from '@/stores/factStore'
+
+import FactsItem from '@/components/FactsItem.vue'
+import NoResults from '@/components/NoResults.vue'
+import BackToTopButton from '@/components/BackToTopButton.vue'
+
+const fact = useFactStore()
 
 const list = computed(() => {
-  return fact.data;
-});
+  return fact.data
+})
 
-const counter = computed(() =>{
+const counter = computed(() => {
   return fact.counter
 })
 </script>
@@ -22,13 +24,12 @@ const counter = computed(() =>{
       v-for="(item, index) of list"
       v-bind:key="item.id"
       :fact="item.value"
-      :id="item.id"
       :index="index"
     />
-    <BackToTopButton v-if="counter > 15"/>
+    <BackToTopButton v-if="counter > 15" />
   </div>
   <div v-else>
-    <NoResults/>
+    <NoResults />
   </div>
 </template>
 
