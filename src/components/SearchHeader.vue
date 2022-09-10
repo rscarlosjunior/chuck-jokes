@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
+import { reactive } from 'vue'
+
+import { useFactStore } from '@/stores/factStore'
 
 import useVuelidate from '@vuelidate/core'
 import { minLength, maxLength } from '@vuelidate/validators'
 
-import { useFactStore } from '@/stores/factStore'
 const fact = useFactStore()
 
 const form = reactive({ search: '' })
@@ -17,6 +18,10 @@ const v$ = useVuelidate(rules, form)
 
 function onSubmit() {
   fact.getData(form.search)
+}
+
+function onFellingLucky() {
+  fact.getRandom()
 }
 </script>
 <template>
@@ -48,6 +53,16 @@ function onSubmit() {
       <p v-if="v$.$invalid" class="header__search--error">
         Type between 3 and 120 characters, or remove all to reset the search
       </p>
+      <button @click="onFellingLucky" type="button" class="header__search__lucky">
+        I'm feeling lucky today
+        <img
+          alt="ChuckNoris logo"
+          class="header__search__lucky--image"
+          src="@/assets/image/trevo.png"
+          width="20"
+          height="20"
+        />
+      </button>
     </div>
   </section>
 </template>
@@ -117,6 +132,23 @@ function onSubmit() {
           color: #9900e6;
           cursor: pointer;
         }
+      }
+    }
+    &__lucky {
+      width: 100%;
+      background-color: #c9eede;
+      padding: 0.85rem;
+      font-size: 1rem;
+      border-radius: 0.3rem;
+      margin-top: 0.85rem;
+      border: unset;
+      color: #6e6e6e;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &--image {
+        margin-left: 0.5rem;
       }
     }
   }
