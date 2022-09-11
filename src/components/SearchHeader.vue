@@ -21,6 +21,7 @@ function onSubmit() {
 }
 
 function onFellingLucky() {
+  form.search = ''
   fact.getRandom()
 }
 </script>
