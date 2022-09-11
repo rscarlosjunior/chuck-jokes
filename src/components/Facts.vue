@@ -16,6 +16,10 @@ const list = computed(() => {
 const counter = computed(() => {
   return fact.counter
 })
+
+const isRandom = computed(() => {
+  return fact.isRandom
+})
 </script>
 
 <template>
@@ -24,6 +28,7 @@ const counter = computed(() => {
       v-for="(item, index) of list"
       v-bind:key="item.id"
       :fact="item.value"
+      :isRandom="isRandom"
       :index="index"
     />
     <BackToTopButton v-if="counter > 15" />

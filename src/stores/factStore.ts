@@ -8,9 +8,11 @@ export const useFactStore = defineStore({
     reactive({
       data: Array(),
       counter: 0,
+      isRandom: false
     }),
   actions: {
     async getData(params?: string) {
+      this.isRandom = false
       this.counter = 0
       const res = await getFactByText(params || 'all')
       this.data = res.result
@@ -21,6 +23,7 @@ export const useFactStore = defineStore({
       const res = await getRandomFact()
       this.data = res.result
       this.counter = 1
+      this.isRandom = true
     },
   },
 })

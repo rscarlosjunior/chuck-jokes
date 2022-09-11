@@ -51,6 +51,9 @@ Of course, it's not a finished project and it always can be more awesome doing u
 Please follow the doc to start
 
 ### Prerequisites
+  ```sh
+node ^v16.15.1
+ ```
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
